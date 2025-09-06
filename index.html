@@ -7,9 +7,22 @@
 </head>
 <body>
 
+    <!-- <input type="text" id="myinp" placeholder="type here" onclick="add(event)">  -->
+ 
+    <input type="text" onkeypress="myfun(event)"> 
+   <!-- <button onclick="showEvent(event)">Click me</button> -->
 
 
+   <!-- <div id="btn">
+   <input type="text" placeholder="enter your name" id="inp">
+      <button onclick="add()">click here</button>
+   </div> -->
 
+<!-- <div id="btn">
+   <button  onclick="add()">click here</button>
+</div>
+
+<input type="text" name="text" id="inp"> -->
 
    <script>
 
@@ -28,11 +41,77 @@
 // var arr = [2,3,4,5,6,7,8,9]
 // console.log(arr.includes(10))
 
-function userInfo(name,age,city){
-console.log(name+  age+  city)
-}
-userInfo("huma" , 21 ,"karaci")
+// function userInfo(name,age,city){
+// console.log(name+  age+  city)
+// }
+// userInfo("huma" , 21 ,"karaci")
 
+// function add(){
+//  document.getElementById("btn").innerHTML = "<h1>hy world</h1>"
+// } 
+// 2 tpyes of function parameterize function non parameterize function
+
+//parametrize function
+
+// function add(a,b){
+//   var sum =  a+b
+//  return sum
+// }
+// let result = add(10,20)
+//  console.log(result)
+// let min = add(10,30)
+//  console.log(min)
+
+// non parameterize function
+
+// function add(){
+
+//    var sum = 2+3
+//    var add = 4-4
+//    var mul = 9*9
+//    console.log(sum)
+//    console.log(add)
+//    console.log(mul)
+//  return {add,sum, mul} object
+// }
+//  var result = add()
+//  console.log(result)
+
+// var final = result
+// console.log(final)
+
+// function add(){
+
+//    document.getElementById("btn").innerHTML += "<h1>hello how are you </h1>"
+//    document.getElementById("inp"). placeholder = "click here"
+// }
+
+
+// document.getElementById("myinp").addEventListener("input")
+// function add(){
+//    console.log( "target elemnt":,e.target)
+//     console.log(e.target.value)
+// }
+
+// function showEvent(e) {
+//    console.log(e);
+// }
+
+
+//  document.addEventListener("keydown", function(event) {
+//       console.log(event);   // pura object show karega
+//     });
+
+
+// function add(e){
+// console.log("Terget Element:",e.target)
+// console.log("Terget Value:",e.target.value)
+// }
+
+function myfun(e) {
+   console.log(e);  // pura event object console me aayega
+   console.log("Pressed Key:", e.key); // sirf key ka naam bhi show karega
+}
    </script> 
 
 
